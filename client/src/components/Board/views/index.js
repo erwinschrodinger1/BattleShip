@@ -13,7 +13,10 @@ export default function Board() {
   ]);
 
   function sendData() {
-    axios.post(BaseURL, boardState);
+    console.log(boardState);
+    axios.post(BaseURL, boardState).then((res)=>{
+      
+    });
   }
 
   return (
